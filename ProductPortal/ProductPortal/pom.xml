@@ -27,11 +27,24 @@
         </dependency>
 
         <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.faces</artifactId>
-            <version>2.3.9</version>
+            <groupId>jakarta.faces</groupId>
+            <artifactId>jakarta.faces-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope> <!-- Use provided if you're deploying to a server that includes JSF -->
         </dependency>
 
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.faces</artifactId>
+            <version>3.0.0</version> <!-- Make sure to use the correct implementation -->
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version> <!-- Check compatibility with your server -->
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
@@ -48,8 +61,6 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

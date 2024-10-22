@@ -19,8 +19,9 @@ public class Product {
 
     private String name;
 
-//    @Column(name = "discription")
-    private String disc;
+    private String description;
 
     private Double price;
+
+    private Boolean  deleted = false;
 }
