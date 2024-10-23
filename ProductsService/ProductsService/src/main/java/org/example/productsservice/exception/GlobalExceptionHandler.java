@@ -14,12 +14,12 @@ import java.util.Map;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    // Generic exceptions
+    // General Exceptions
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Object> handleGlobalException(Exception ex, WebRequest request) {
         Map<String, Object> body = new HashMap<>();
         body.put(Constant.MESSAGE_KEY, "An unexpected error occurred");
-        body.put("details", ex.getMessage());
+        body.put(Constant.DETAILS_KEY, ex.getMessage());
         return new ResponseEntity<>(body, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

@@ -28,13 +28,18 @@ public class ProductController {
     }
 
     @PostMapping("/addProduct")
-    public ResponseEntity<Product> addProduct(@RequestBody Product product) {
+    public ResponseEntity<Product> addProduct(
+            @RequestBody Product product
+    ) {
         Product createdProduct = productService.addProduct(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct);
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody Product productDetails) {
+    public ResponseEntity<Product> updateProduct(
+            @PathVariable Long id,
+            @RequestBody Product productDetails
+    ) {
         Product updatedProduct = productService.updateProduct(id, productDetails);
         if (updatedProduct != null) {
             return ResponseEntity.ok(updatedProduct);
@@ -43,7 +48,9 @@ public class ProductController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Void> softDeleteProduct(@PathVariable Long id) {
+    public ResponseEntity<Void> softDeleteProduct(
+            @PathVariable Long id
+    ) {
         if (productService.softDeleteProduct(id)) {
             return ResponseEntity.noContent().build();
         }
