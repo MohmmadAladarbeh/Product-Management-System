@@ -16,25 +16,26 @@ import java.util.Optional;
 @Service
 public class ProductService {
 
-
     private final ProductRepository productRepository;
 
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
-    @Cacheable(value = "productsCache", unless = "#result != null && #result.isEmpty()")
+    // Get all products
+//    @Cacheable(value = "productsCache", unless = "#result != null && #result.isEmpty()")
     public List<Product> getAllProducts() {
         log.info("Fetching all active products");
         List<Product> products = productRepository.findAllActiveProducts();
         if (products.isEmpty()) {
             log.info("No products have been founded");
-            throw new ResourceNotFoundException("No products have been founded");
+            return products;
         }
         log.info("Fetched {} active products", products.size());
         return products;
     }
 
+    // Add new product
     public Product addProduct(Product product) {
         if (Global.isEmptyString(product.getName()).isEmpty()) {
             throw new InvalidInputException("Product's name is required");
@@ -49,6 +50,7 @@ public class ProductService {
         return productRepository.save(product);
     }
 
+    // Update specific product
     public Product updateProduct(Long id, Product newProduct) {
         Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isPresent() && !productOptional.get().getDeleted()) {
@@ -71,6 +73,7 @@ public class ProductService {
         }
     }
 
+    // Delete specific product
     public boolean softDeleteProduct(Long id) {
         Optional<Product> optionalProduct = productRepository.findById(id);
         if (optionalProduct.isPresent() && !optionalProduct.get().getDeleted()) {
