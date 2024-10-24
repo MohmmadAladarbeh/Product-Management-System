@@ -105,6 +105,11 @@ public class ProductBean {
                 });
     }
 
+    // Reload the page
+    private String redirectTo(String path) {
+        return path + "?faces-redirect=true";
+    }
+
     // Fill and sort productsList
     private void fillAndSortProductsList(Product[] products) {
         productList = Arrays.asList(products);
@@ -130,8 +135,5 @@ public class ProductBean {
         return productList;
     }
 
-    // Reload the page
-    private String redirectTo(String path) {
-        return path + "?faces-redirect=true";
-    }
+
 }
