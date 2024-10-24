@@ -38,23 +38,31 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 
 - **Pages:**
   - `product.xhtml`: Lists all products.
-  - `addProduct.xhtml`: Allows adding new products.
-  - `editProduct.xhtml`: For updating existing products.
-  - `deleteProduct.xhtml`: Confirms product deletion.
+  - `error.xhtml`: Something went wrong!.
+  - `error-404.xhtml`: Page Not Found.
+  - `error-500.xhtml`: Internal Server Error.
   
 ### Example Pages
 
   - **Product Listing Page (`product.xhtml`):**
     - Displays a table of products with options to edit or delete.
     - Implements pagination and sorting.
-    - Ajax-based updates for smooth user experience.
+    - Add button to add new product
+    ![](images/getAllProducts.png)
+  - **Add New Product**
+    - From add button at the bottom of the page we can add new product.  
+    - It loaded automatically when close the add new product dialog.  
+    ![](images/addProduct.png)
 
-  - **Add Product Page (`addProduct.xhtml`):**
-    - Form to add a new product.
-    - Validates input fields, including a regex pattern for price (accepts 6 digits with commas).
-
+  - **Edit Product**
+    - From edit button we can edit product.  
+    - It loaded automatically when close the edit product dialog.  
+    ![](images/editProduct.png)
+    
   - **Delete Confirmation (`deleteDialog`):**
     - Popup dialog for confirming the deletion of a product.
+    - It loaded automatically when close the edit product dialog.  
+    ![](images/deleteProduct.png)
 
 ## Architecture
 
