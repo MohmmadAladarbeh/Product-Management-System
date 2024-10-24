@@ -75,7 +75,7 @@ The system follows a clean separation of concerns:
 
 ### Prerequisites
 
-- Java 17
-- Maven
-- Tomcat
-- A running MySQL/PostgreSQL database for product data.
+- ![](images/java.png) Java 17
+- ![](images/build.png) Maven
+- ![](images/server.png) Tomcat
+- ![](images/database.png) A running MySQL/PostgreSQL database for product data.
