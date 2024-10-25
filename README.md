@@ -1,7 +1,7 @@
 # Product Management System ![](images/product-system.png)
 
 ## Objective
-![](images/down-arrow.png)![](images/down-arrow.png)![](images/down-arrow.png)    [Go to see examples about Product Management System](#example-pages)  
+![](images/down-arrow.png)![](images/down-arrow.png)![](images/down-arrow.png)    [Go to see examples and explanation about Product Management System](#example-pages)  
 This system consists of two Spring Boot projects: one for the backend (REST API) and the other for the frontend using JSF with PrimeFaces. The goal is to implement a full-featured product management system allowing users to perform CRUD operations on products through a user-friendly web interface.
 
 ## Project Overview ![](images/overview.png)
