@@ -23,7 +23,7 @@ public class ProductService {
     }
 
     // Get all products
-//    @Cacheable(value = "productsCache", unless = "#result != null && #result.isEmpty()")
+    @Cacheable(value = "productsCache", unless = "#result != null && #result.isEmpty()")
     public List<Product> getAllProducts() {
         log.info("Fetching all active products");
         List<Product> products = productRepository.findAllActiveProducts();

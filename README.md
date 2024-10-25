@@ -64,6 +64,27 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
     - It loaded automatically when close the edit product dialog.  
     ![](images/deleteProduct.png)
 
+  - **Exception Handling ![](images/exception-handling.png)**
+    - Add GlobalException to handle the ProductService's exception.
+      1. Handle the exception for delete product depends on unfound product-ID
+        ![](images/product-not-found-delete.png)
+      2. Handle the exceptions that are generating from Invalid input.
+        ![](images/invalidate-inputs.png)
+      1. Handle the exception for update product depends on unfound product-ID
+        ![](images/product-not-found-update.png)
+- **logging using SLF4J ![](images/log-icon.png)**
+    - Using SFL44J to handle log messages.
+    ![](images/log.png)
+
+- **Casing ![](images/cash-icon.png)**
+    - Add cashing consept for our ProductService.
+    - here it's not a best choice for cashing data, I used it for just testing.
+    ![](images/cash.png)
+
+- **OpenApi ![](images/documentation-api.png)**
+  - Using OpenApi for auto documentation generating for our ProductService.
+    ![](images/open-api.png)
+
 ## Architecture ![](images/architecture.png)
 
 The system follows a clean separation of concerns:
