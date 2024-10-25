@@ -12,7 +12,7 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 - **Database Interaction:** Spring Data JPA
 - **API Documentation:** OpenAPI
 - **Error Handling:** @ControllerAdvice for global error handling
-- **Caching:** @Cashable Implemented where applicable
+- **Caching:** @Cashable Implemented 
 - **Logging:** SLF4J/Logback for logging
 - **Build Tool:** Maven
 
@@ -24,7 +24,7 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 - **Error Handling:**
   - Custom exception handling using `@ControllerAdvice`.
   - Defined global error responses.
-- **OpenAPI:** Integrated for API documentation and testing.
+- **OpenAPI:** Integrated for API documentation.
 - **Caching:** Improved performance by caching product listings.
 
 ### 2. Frontend Project (JSF, PrimeFaces, Spring Boot) ![](images/frontend.png)
