@@ -6,7 +6,7 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 
 ## Project Overview
 
-### 1. Backend Project (Spring Boot, Spring Data JPA, Spring REST)
+### 1. Backend Project (Spring Boot, Spring Data JPA, Spring REST) ![](images/backend.png)
 
 - **Framework:** Spring Boot
 - **Database Interaction:** Spring Data JPA
@@ -27,7 +27,7 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 - **OpenAPI:** Integrated for API documentation and testing.
 - **Caching:** Improved performance by caching product listings.
 
-### 2. Frontend Project (JSF, PrimeFaces, Spring Boot)
+### 2. Frontend Project (JSF, PrimeFaces, Spring Boot) ![](images/frontend.png)
 
 - **Framework:** JSF, PrimeFaces with Spring Boot
 - **UI Components:** PrimeFaces for rich UI components
