@@ -44,22 +44,22 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
   
 ### Example Pages
 
-  - **Product Listing Page (`product.xhtml`):**
+  - **Product Listing Page (`product.xhtml`): ![](images/check-list.png)**
     - Displays a table of products with options to edit or delete.
     - Implements pagination and sorting.
     - Add button to add new product
     ![](images/getAllProducts.png)
-  - **Add New Product**
+  - **Add New Product   ![](images/add-button.png)**
     - From add button at the bottom of the page we can add new product.  
     - It loaded automatically when close the add new product dialog.  
     ![](images/addProduct.png)
 
-  - **Edit Product**
+  - **Edit Product ![](images/edit-button.png)**
     - From edit button we can edit product.  
     - It loaded automatically when close the edit product dialog.  
     ![](images/editProduct.png)
     
-  - **Delete Product Confirmation
+- **Delete Product Confirmation ![](images/delete-button.png)**
     - Popup dialog for confirming the deletion of a product.
     - It loaded automatically when close the edit product dialog.  
     ![](images/deleteProduct.png)
