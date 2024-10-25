@@ -73,7 +73,7 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
       1. Handle the exception for update product depends on unfound product-ID
         ![](images/product-not-found-update.png)
 - **logging using SLF4J ![](images/log-icon.png)**
-    - Using SFL44J to handle log messages.
+    - Using SFL44J to handle log messages.  
     ![](images/log.png)
 
 - **Casing ![](images/cash-icon.png)**
