@@ -99,4 +99,5 @@ The system follows a clean separation of concerns:
 - ![](images/java.png) Java 17
 - ![](images/build.png) Maven
 - ![](images/server.png) Tomcat
+- - ![](images/build.png) Intillij
 - ![](images/database.png) A running MySQL/PostgreSQL database for product data.
