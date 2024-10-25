@@ -4,7 +4,7 @@
 ![](images/down-arrow.png)![](images/down-arrow.png)![](images/down-arrow.png)    [Go to see examples about Product Management System](#example-pages)  
 This system consists of two Spring Boot projects: one for the backend (REST API) and the other for the frontend using JSF with PrimeFaces. The goal is to implement a full-featured product management system allowing users to perform CRUD operations on products through a user-friendly web interface.
 
-## Project Overview
+## Project Overview ![](images/overview.png)
 
 ### 1. Backend Project (Spring Boot, Spring Data JPA, Spring REST) ![](images/backend.png)
 
@@ -64,14 +64,14 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
     - It loaded automatically when close the edit product dialog.  
     ![](images/deleteProduct.png)
 
-## Architecture
+## Architecture ![](images/architecture.png)
 
 The system follows a clean separation of concerns:
 
 - **Backend:** Provides RESTful services for product management.
 - **Frontend:** Handles user interactions and communicates with the backend via HTTP calls (WebClient).
 
-## Build and Run Instructions
+## Build and Run Instructions ![](images/build-tool.png)
 
 ### Prerequisites
 
