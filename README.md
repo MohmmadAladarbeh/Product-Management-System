@@ -84,7 +84,10 @@ This system consists of two Spring Boot projects: one for the backend (REST API)
 - **OpenApi ![](images/documentation-api.png)**
   - Using OpenApi for auto documentation generating for our ProductService.
     ![](images/open-api.png)
-
+    
+## Future Plan ![](images/future.png)
+- Add SpringSecurity using JWT for ProductService Project.
+- Add singup page and approval page for ProductService users.
 ## Architecture ![](images/architecture.png)
 
 The system follows a clean separation of concerns:
